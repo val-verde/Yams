@@ -12,7 +12,8 @@ import Foundation
 import Darwin
 private let cpow: (_: Double, _: Double) -> Double = Darwin.pow
 #elseif os(Windows)
-import ucrt
+import CoreFoundation
+import CRT
 private let cpow: (_: Double, _: Double) -> Double = ucrt.pow
 #else
 import CoreFoundation
