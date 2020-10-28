@@ -253,7 +253,7 @@ extension String: ScalarRepresentable {
     }
 }
 
-extension UUID: ScalarRepresentable {
+extension Foundation.UUID: ScalarRepresentable {
     /// This value's `Node.scalar` representation.
     public func represented() -> Node.Scalar {
         return .init(uuidString)
@@ -290,7 +290,7 @@ extension UInt32: YAMLEncodable {}
 extension UInt64: YAMLEncodable {}
 extension URL: YAMLEncodable {}
 extension String: YAMLEncodable {}
-extension UUID: YAMLEncodable {}
+extension Foundation.UUID: YAMLEncodable {}
 
 extension Date: YAMLEncodable {
     /// Returns this value wrapped in a `Node.scalar`.
