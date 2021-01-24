@@ -16,7 +16,9 @@ extern "C" {
 #endif
 
 #include <stddef.h>
+#ifndef _WIN32
 #include <stdlib.h>
+#endif
 #include <stdio.h>
 #include <string.h>
 
