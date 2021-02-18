@@ -14,7 +14,7 @@ private let cpow: (_: Double, _: Double) -> Double = Darwin.pow
 #elseif os(Windows)
 import CoreFoundation
 import CRT
-private let cpow: (_: Double, _: Double) -> Double = ucrt.pow
+private let cpow: (_: Double, _: Double) -> Double = CRT.pow
 #else
 import CoreFoundation
 import Glibc
